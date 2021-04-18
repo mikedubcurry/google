@@ -42,6 +42,10 @@ body {
 	box-shadow: 1px 1px rgb(0 0 0 / 10%);
 }
 
+.btns > button:focus {
+	border: 1px solid #4d90fe;
+}
+
 a:hover {
 	text-decoration: underline;
 }
@@ -56,14 +60,14 @@ a:hover {
 	max-width: 95vw;
 }
 .search-icon,
-.voice-icon {
+.voice-icon,
+.clear-icon {
 	width: 20px;
 	height: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-
 }
 .search-icon {
 	color: #9aa0a6;
@@ -71,6 +75,24 @@ a:hover {
 .search-icon > svg {
 	fill: currentColor;
 }
+.voice-icon > svg {
+	/* height: 30px; */
+}
+.clear-icon {
+	color: #9aa0a6;
+
+	height: 100%;
+	visibility: hidden;
+}
+.clear-icon > svg {
+	fill: currentColor;
+}
+
+.clear-icon,
+.voice-icon {
+	cursor: pointer;
+}
+
 .search-input {
 	width: 100%;
 	border: none;
